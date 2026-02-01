@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SmartFarm Africa</title>
+
+    <!-- ===== INTERNAL CSS (DANGER STYLE) ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #8b0000, #c0392b);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: #5a0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 12px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #e74c3c;
+            border-radius: 6px;
+        }
+
+        /* ===== Main Layout ===== */
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        /* ===== Article (Form) ===== */
+        article {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        article h2 {
+            color: #c0392b;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e74c3c;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #8b0000;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #e74c3c;
+            box-shadow: 0 0 6px rgba(231, 76, 60, 0.6);
+        }
+
+        input[type="submit"] {
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        /* ===== Aside ===== */
+        aside {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        aside h3 {
+            color: #c0392b;
+            margin-bottom: 10px;
+            border-left: 5px solid #e74c3c;
+            padding-left: 10px;
+        }
+
+        aside p {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        iframe {
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: #5a0000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        footer address {
+            font-style: normal;
+            margin-bottom: 6px;
+            color: #ffdddd;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SmartFarm Africa</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html">Form</a>
+        <a href="media.html">Media</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </article>
+
+    <aside>
+        <h3>Contact Details</h3>
+        <p><strong>Address:</strong> Kigali, Rwanda</p>
+        <p><strong>Email:</strong> info@smartfarm.rw</p>
+
+        <h3>Our Location</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=..."
+            width="100%" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="">
+        </iframe>
+    </aside>
+</main>
+
+<footer>
+    <address>Kigali, Rwanda | ivankagabo41@gmail.com</address>
+    <p>&copy; 2025 SmartFarm Africa. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SmartFarm Africa</title>
+
+    <!-- ===== INTERNAL CSS ===== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e7f4f, #2ecc71);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: #145a32;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 12px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #2ecc71;
+            border-radius: 6px;
+        }
+
+        /* ===== Main Layout ===== */
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        /* ===== Article ===== */
+        article {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        article h2 {
+            color: #145a32;
+            margin-bottom: 15px;
+        }
+
+        article p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        article strong {
+            color: #1e7f4f;
+        }
+
+        blockquote {
+            margin: 20px 0;
+            padding: 15px 20px;
+            background: #eafaf1;
+            border-left: 6px solid #2ecc71;
+            font-style: italic;
+            color: #145a32;
+            border-radius: 5px;
+        }
+
+        q {
+            font-style: italic;
+            color: #1e7f4f;
+        }
+
+        /* ===== Aside ===== */
+        aside {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        aside h3 {
+            color: #145a32;
+            margin-bottom: 15px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #eafaf1;
+            border-left: 5px solid #2ecc71;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: #145a32;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        footer address {
+            font-style: normal;
+            margin-bottom: 8px;
+            color: #e0f7ec;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 900px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SmartFarm Africa</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="form.html">Form</a>
+        <a href="media.html">Media</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Who We Are</h2>
+        <p>
+            <strong>SmartFarm Africa</strong> is a digital agriculture initiative
+            focused on connecting farmers with modern technology to improve
+            productivity and sustainability across Africa.
+        </p>
+
+        <blockquote>
+            "Agriculture is the backbone of Africa’s economy and future."
+        </blockquote>
+
+        <p>
+            <q>Technology is the seed for tomorrow’s harvest.</q> — SmartFarm Africa
+        </p>
+    </article>
+
+    <aside>
+        <h3>Our Focus</h3>
+        <ul>
+            <li>Youth engagement in agriculture</li>
+            <li>Women empowerment</li>
+            <li>Digital farming tools</li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <address>Created by Ivan Kagabo, Kigali, Rwanda</address>
+    <p>&copy; 2025 SmartFarm Africa. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

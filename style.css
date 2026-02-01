@@ -1,0 +1,85 @@
+/* Iyi ni External CSS izatuma urubuga rugaragara neza */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f9f4; /* Ibara ry'icyatsi ryoroheje */
+    color: #333;
+}
+
+header {
+    background-color: #2e7d32; /* Green ikomeye */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #2e7d32;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 20px;
+}
+
+main {
+    display: flex; /* Flexbox ikoreshwa hano */
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+article {
+    flex: 3; /* Ifata 75% by'umwanya */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+aside {
+    flex: 1; /* Ifata 25% by'umwanya */
+    background: #e8f5e9;
+    padding: 25px;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #1b331d;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Media Query: Ituma urubuga ruba responsive kuri telefoni */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
